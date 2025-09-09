@@ -17,8 +17,18 @@
 )
 
 #cvSkill(
-  type: [Frameworks],
-  info: [React.js #hBar() Vue.js #hBar() Node.js #hBar() Flutter #hBar() Android SDK],
+  type: [Frontend Web],
+  info: [Vue.js #hBar() React.js #hBar() HTML/CSS],
+)
+
+#cvSkill(
+  type: [Backend Web],
+  info: [Node.js #hBar() Firebase]
+)
+
+#cvSkill(
+  type: [Mobile],
+  info: [Flutter #hBar() Android SDK]
 )
 
 #cvSkill(

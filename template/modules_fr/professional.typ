@@ -8,11 +8,11 @@
 #cvSection("Expérience Professionnelle")
 
 #cvEntry(
-  title: [Directeur de la Science des Données],
-  society: [XYZ Corporation],
-  date: [2020 - Présent],
-  logo: image("../src/logos/xyz_corp.png"),
-  location: [San Francisco, CA],
+  title: [Développeur d'applications mobile & Full Stack],
+  society: [Manga&Stories4All],
+  date: [Juil. 2023 - Oct. 2024],
+  logo: image("../src/logos/mangastories4all_logo.jpeg"),
+  location: [Suisse],
   description: list(
     [Diriger une équipe de scientifiques et d'analystes de données pour développer et mettre en œuvre des stratégies axées sur les données, développer des modèles prédictifs et des algorithmes pour soutenir la prise de décisions dans toute l'organisation],
     [Collaborer avec la direction pour identifier les opportunités d'affaires et stimuler la croissance, mettre en œuvre les meilleures pratiques en matière de gouvernance, de qualité et de sécurité des données],
@@ -21,25 +21,13 @@
 )
 
 #cvEntry(
-  title: [Analyste de Données],
-  society: [ABC Company],
-  date: [2017 - 2020],
-  location: [New York, NY],
-  logo: image("../src/logos/abc_company.png"),
+  title: [Stagiaire],
+  society: [SDATAWAY SA],
+  date: [Sept. 2021 - Déc. 2021],
+  location: [Châtel-Saint-Denis, Suisse],
+  logo: image("../src/logos/sdataway_logo.jpeg"),
   description: list(
     [Analyser de grands ensembles de données avec SQL et Python, collaborer avec les équipes pour découvrir des insights commerciaux],
     [Créer des visualisations de données et des tableaux de bord dans Tableau, développer et maintenir des pipelines de données avec AWS],
   ),
-)
-
-#cvEntry(
-  title: [Stagiaire en Analyse de Données],
-  society: [PQR Corporation],
-  date: list(
-    [été 2017],
-    [été 2016],
-  ),
-  location: [Chicago, IL],
-  logo: image("../src/logos/pqr_corp.png"),
-  description: list([Aider à la préparation, au traitement et à l'analyse de données à l'aide de Python et Excel, participer aux réunions d'équipe et contribuer à la planification et à l'exécution de projets]),
 )

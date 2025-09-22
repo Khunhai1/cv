@@ -38,7 +38,7 @@
 
 #cvSkill(
   type: [Cloud],
-  info: [Azure, Firebase]
+  info: [Azure #hBar() Firebase]
 )
 
 #v(1em)

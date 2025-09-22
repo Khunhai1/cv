@@ -35,7 +35,8 @@
     #list(
       [Boîte postale détectant la présence de colis et de lettres grâce à des capteurs],
       [Développement de la logique de détection],
-      [Développement d'une application Desktop présentant l'état de la boîte]
+      [Développement d'une application de bureau présentant l'état de la boîte],
+      [Envoi automatique de SMS lors de la détection de courrier]
     )
   ],
   tags: ("Java", "JavaFX", "Phidgets")

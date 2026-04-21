@@ -15,9 +15,7 @@
   location: [Suisse, à distance],
   description: list(
     [Développement d'une application mobile de lecture de mangas/webtoons multiplateforme pour un projet indépendant],
-    [Développement d'un site Web pour les administrateurs de la plateforme],
-    [Collaboration avec une équipe de deux autres développeurs],
-    [Collaboration avec une équipe de marketing pour répondre aux besoins du projet]
+    [Collaboration avec une équipe de deux autres développeurs et une team de marketing],
   ),
   tags: ("Flutter", "Dart", "Firebase Auth", "Cloud Firestore", "NoSQL orienté document"),
 )
@@ -34,4 +32,18 @@
     [Génération de code pour des applications utilisant leurs objets connectés propriétaires],
   ),
   tags: ("Bluetooth Low Energy", "HTML", "CSS", "JavaScript", "PHP", "Android")
+)
+
+#cvEntry(
+  title: [Développeur Full Stack et d'applications mobile],
+  society: [Remakeit FZCO],
+  date: [Oct. 2025 - Avr. 2026],
+  location: [Fribourg, Suisse],
+  logo: image("../src/logos/remakeit.jpg"),
+  description: list(
+    [Développement rapide de fonctionnalités, maintenance et monitoring des applications Remakeit et Visifoot],
+    [Réponses aux exigences et collaboration avec une team de développement et un designer],
+    [Maitrise des outils Cursor et Claude Code]
+  ),
+  tags: ("React", "React Native", "AWS")
 )

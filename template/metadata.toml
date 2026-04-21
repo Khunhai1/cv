@@ -83,7 +83,7 @@ language = "fr"
     letter_footer = "Cover letter"
 
 [lang.fr]
-    header_quote = "Ingénieur développeur junior à la recherche d'un emploi à temps plein comme développeur Full Stack, d'applications mobiles ou encore d'opportunités dans le développement embarqué"
+    header_quote = "Ingénieur développeur junior à la recherche d'un emploi à temps plein comme développeur Full Stack, Software, d'applications mobiles ou encore d'opportunités dans le développement embarqué"
     cv_footer = "Curriculum vitae"
     letter_footer = "Lettre de motivation"
 

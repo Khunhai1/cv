@@ -8,7 +8,7 @@
 #cvSection("Formation")
 
 #cvEntry(
-  title: [Bachelor of Science HES-SO en Informatique et systèmes de communication avec orientaation en Ingénierie des données],
+  title: [Bachelor of Science HES-SO en Informatique et systèmes de communication - orientation en Ingénierie des données],
   society: [Haute école d'ingénierie et d'architecture de Fribourg (HEIA-FR)],
   date: [2022 - 2025],
   location: [Fribourg, Suisse],
@@ -16,8 +16,7 @@
   description: [
     Projet de Bachelor :
     #list(
-      [Application mobile pour provisioning et monitoring de réseaux maillés "Bluetooth Mesh" de capteurs environnementaux],
-      [Amélioration de l'application existante "nRF Mesh" pour répondre aux besoins du projet],
+      [Application mobile pour le provisioning et monitoring de réseaux maillés "Bluetooth Mesh" de capteurs environnementaux],
       [Collaboration avec deux membres de l'institut iSIS de la HEIA-FR]
     )
   ],
@@ -34,9 +33,7 @@
     Projet TPI : eBoîte postale
     #list(
       [Boîte postale détectant la présence de colis et de lettres grâce à des capteurs],
-      [Développement de la logique de détection],
-      [Développement d'une application de bureau présentant l'état de la boîte],
-      [Envoi automatique de SMS lors de la détection de courrier]
+      [Développement de la logique de détection, d'une application Java et de l'envoi automatique de SMS],
     )
   ],
   tags: ("Java", "JavaFX", "Phidgets")

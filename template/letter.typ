@@ -1,32 +1,91 @@
-// Imports
-#import "@preview/brilliant-cv:2.0.5": letter
-#let metadata = toml("./metadata.toml")
-
-
-#show: letter.with(
-  metadata,
-  myAddress: "Your Address Here",
-  recipientName: "Company Name Here",
-  recipientAddress: "Company Address Here",
-  date: datetime.today().display(),
-  subject: "Subject: Hey!",
-  signature: image("src/signature.png"),
+#set page(
+  paper: "a4",
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm)
 )
 
-Dear Hiring Manager,
+#set text(
+  size: 12pt,
+  lang: "fr"
+)
 
-I am excited to submit my application for the Senior Data Analyst position at ABC Company. With over 5 years of experience in data analysis and a demonstrated track record of success, I am confident in my ability to make a valuable contribution to your team.
+#set par(
+  justify: true,
+  leading: 0.65em
+)
 
-In my current role as a Data Analyst at XYZ Company, I have gained extensive experience in data mining, quantitative analysis, and data visualization. Through my work, I have developed a deep understanding of statistical concepts and have become adept at using tools such as SQL, Python, and R to extract insights from complex datasets. I have also gained valuable experience in presenting complex data in a visually appealing and easily accessible manner to stakeholders across all levels of an organization.
+// En-tête avec coordonnées de l'expéditeur
+#grid(
+  columns: (1fr, 1fr),
+  column-gutter: 2cm,
+  
+  // Colonne gauche - Coordonnées
+  [
+    #text(size: 16pt, weight: "bold", fill: rgb("#831eff"))[Elian Waeber] \
+    #v(0.5em)
+    Route d'Hennens 5 \
+    1681 Billens-Hennens \
+    079 339 5095 \
+    elian.waeber\@proton.me
+  ],
+  
+  // Colonne droite - Lieu et date
+  [
+    Billens, le 22 setptembre 2025
+  ]
+)
 
-I believe that my experience in data analysis makes me an ideal candidate for the Senior Data Analyst position at ABC Company. I am particularly excited about the opportunity to apply my skills to support your organization's mission and drive impactful insights. Your focus on driving innovative solutions to complex problems aligns closely with my own passion for using data analysis to drive positive change in organizations.
+#v(2em)
 
-In my current role, I have been responsible for leading data projects from initiation to completion. I work closely with cross-functional teams to identify business problems and use data to develop solutions that drive business outcomes. I have a proven track record of delivering high-quality work on time and within budget.
+#grid(
+  columns: (1fr, 1fr),
+  column-gutter: 2cm,
+  [],
+  [
+    // Coordonnées du destinataire
+    Softcom SA \
+    Route du Jura 37a \
+    1700 Fribourg
+  ]
+)
 
-Furthermore, I have extensive experience in developing and implementing data-driven solutions that improve business operations. For example, I have implemented predictive models that have improved sales forecasting accuracy by 10%, resulting in significant cost savings. I have also developed dashboards that provide real-time insights into business performance, enabling stakeholders to make more informed decisions.
+#v(2em)
 
-As a highly motivated and detail-oriented individual, I am confident that I would thrive in the fast-paced and dynamic environment at ABC Company. I am excited about the opportunity to work with a talented team of professionals and to continue developing my skills in data analysis.
+// Objet
+#text(size: 12pt, weight: "bold", fill: rgb("#831eff"))[Candidature à un poste de Software Engineer Mobile (Android/Kotlin)]
 
-Thank you for considering my application. I look forward to the opportunity to discuss my qualifications further.
+#v(2em)
 
-Sincerely,
+Madame, Monsieur,
+
+#v(0.5em)
+
+Ayant récemment terminé mon Bachelor en informatique à la Haute école d'ingénierie et d'architecture de Fribourg, je suis à la recherche d'un emploi à temps plein ou à 80%.
+
+#v(0.5em)
+
+Votre entreprise m'intéresse particulièrement en raison des nombreux échos positifs que j'ai pu entendre à son sujet, notamment en ce qui concerne l'environnement de travail agile et en équipe, ainsi que les nombreux projets dans des domaines variés.
+
+#v(0.5em)
+
+Malgré mon expérience plus limitée en entreprise, j'ai eu l'occasion de travailler plusieurs fois sur des applications mobiles. Particulièrement lors de mon travail de Bachelor, où j'ai amélioré une application Android "_nRF Mesh_" pour la gestion de réseaux _Bluetooth Mesh_. De plus, j'ai eu l'opportunité de travailler sur un projet indépendant développant une application de lecture de _webcomics_ en parallèle de mes études.
+
+#v(0.5em)
+
+Je serais ravi de pouvoir apporter mes compétences et mon enthousiasme à votre équipe, tout en continuant à apprendre et à me développer.
+
+#v(0.5em)
+
+Je me tiens à votre disposition pour un entretien afin de discuter plus en détail de ma candidature. Dans l'attente de votre réponse, je vous prie d'agréer, Madame, Monsieur, mes meilleures salutations.
+
+#v(2em)
+
+#align(right)[
+  Elian Waeber
+]
+
+#v(2em)
+
+#text(style: "italic")[
+  Pièces jointes :
+  #list("Curriculum vitae", "Attestation de réussite : Bachelor of Science HES-SO en Informatique et systèmes de communication")
+]

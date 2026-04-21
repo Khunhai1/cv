@@ -1,91 +1,38 @@
-#set page(
-  paper: "a4",
-  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm)
+// Imports
+#import "@preview/brilliant-cv:2.0.5": letter
+#let metadata = toml("./metadata.toml")
+
+
+#show: letter.with(
+  metadata,
+  myAddress: "Route d'Hennens 5, 1681 Billens-Hennens",
+  recipientName: "Nom de l'entreprise",
+  recipientAddress: "Adresse de l'entreprise",
+  date: "Billens, le " + datetime.today().display("[day]/[month]/[year]"),
+  subject: "Candidature au poste de [Intitulé du poste]",
 )
-
-#set text(
-  size: 12pt,
-  lang: "fr"
-)
-
-#set par(
-  justify: true,
-  leading: 0.65em
-)
-
-// En-tête avec coordonnées de l'expéditeur
-#grid(
-  columns: (1fr, 1fr),
-  column-gutter: 2cm,
-  
-  // Colonne gauche - Coordonnées
-  [
-    #text(size: 16pt, weight: "bold", fill: rgb("#831eff"))[Elian Waeber] \
-    #v(0.5em)
-    Route d'Hennens 5 \
-    1681 Billens-Hennens \
-    079 339 5095 \
-    elian.waeber\@proton.me
-  ],
-  
-  // Colonne droite - Lieu et date
-  [
-    Billens, le 22 setptembre 2025
-  ]
-)
-
-#v(2em)
-
-#grid(
-  columns: (1fr, 1fr),
-  column-gutter: 2cm,
-  [],
-  [
-    // Coordonnées du destinataire
-    Softcom SA \
-    Route du Jura 37a \
-    1700 Fribourg
-  ]
-)
-
-#v(2em)
-
-// Objet
-#text(size: 12pt, weight: "bold", fill: rgb("#831eff"))[Candidature à un poste de Software Engineer Mobile (Android/Kotlin)]
-
-#v(2em)
 
 Madame, Monsieur,
 
-#v(0.5em)
+Arrivant en fin de contrat chez Remakeit, je suis à la recherche d'un nouveau contrat à 80%.
 
-Ayant récemment terminé mon Bachelor en informatique à la Haute école d'ingénierie et d'architecture de Fribourg, je suis à la recherche d'un emploi à temps plein ou à 80%.
+Votre entreprise m'intéresse particulièrement en raison de [raison spécifique à l'entreprise : réputation, domaine d'activité, projets, valeurs, environnement de travail]. L'opportunité de contribuer à [mission ou projet clé de l'entreprise] correspond pleinement à mes aspirations professionnelles.
 
-#v(0.5em)
-
-Votre entreprise m'intéresse particulièrement en raison des nombreux échos positifs que j'ai pu entendre à son sujet, notamment en ce qui concerne l'environnement de travail agile et en équipe, ainsi que les nombreux projets dans des domaines variés.
-
-#v(0.5em)
-
-Malgré mon expérience plus limitée en entreprise, j'ai eu l'occasion de travailler plusieurs fois sur des applications mobiles. Particulièrement lors de mon travail de Bachelor, où j'ai amélioré une application Android "_nRF Mesh_" pour la gestion de réseaux _Bluetooth Mesh_. De plus, j'ai eu l'opportunité de travailler sur un projet indépendant développant une application de lecture de _webcomics_ en parallèle de mes études.
-
-#v(0.5em)
+Au cours de mes études et de mes expériences professionnelles, j'ai eu l'occasion de mener plusieurs projets logiciels de bout en bout. Je travaille actuellement chez Remakeit en tant que développeur _full-stack_ et mobile sur React, React Native et AWS, où je livre rapidement des fonctionnalités en production et assure la maintenance et le _monitoring_ des applications. J'ai également co-développé une application de lecture de _webcomics_ chez Manga\&Stories4All, en concevant aussi bien les services _backend_ (Firebase, Firestore) que l'interface cliente en Flutter. Ces expériences m'ont donné des bases solides en développement _full-stack_, en _REST APIs_ et en _workflows_ Git.
 
 Je serais ravi de pouvoir apporter mes compétences et mon enthousiasme à votre équipe, tout en continuant à apprendre et à me développer.
 
-#v(0.5em)
-
 Je me tiens à votre disposition pour un entretien afin de discuter plus en détail de ma candidature. Dans l'attente de votre réponse, je vous prie d'agréer, Madame, Monsieur, mes meilleures salutations.
 
-#v(2em)
+#v(1em)
 
 #align(right)[
   Elian Waeber
 ]
 
-#v(2em)
+#v(1em)
 
-#text(style: "italic")[
+#text(style: "italic", size: 10pt)[
   Pièces jointes :
-  #list("Curriculum vitae", "Attestation de réussite : Bachelor of Science HES-SO en Informatique et systèmes de communication")
+  #list("Curriculum vitae", "Diplôme : Bachelor of Science HES-SO en Informatique et systèmes de communication")
 ]
